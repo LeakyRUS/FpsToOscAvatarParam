@@ -4,7 +4,7 @@ using System.Net.Sockets;
 
 namespace FpsToOscAvatarParam;
 
-public sealed class AvatarOscSender : IOSCAvatarSingleValueSender, IDisposable
+public sealed class AvatarOscSender : IAvatarValueSender, IDisposable
 {
     private readonly UdpClient _udpClient;
     private string _address = string.Empty;

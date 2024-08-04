@@ -1,6 +1,6 @@
 ﻿namespace FpsToOscAvatarParam;
 
-public interface IOSCAvatarSingleValueSender
+public interface IAvatarValueSender
 {
     void SetAddress(string address);
     Task SendValue(float value);

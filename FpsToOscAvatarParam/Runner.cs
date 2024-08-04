@@ -6,12 +6,12 @@ public class Runner
 {
     private readonly IConfiguration _configuration;
     private readonly IFpsProvider _fpsProvider;
-    private readonly IOSCAvatarSingleValueSender _sender;
+    private readonly IAvatarValueSender _sender;
 
     public Runner(
         IConfiguration configuration,
         IFpsProvider fpsProvider,
-        IOSCAvatarSingleValueSender sender)
+        IAvatarValueSender sender)
     {
         _configuration = configuration;
         _fpsProvider = fpsProvider;
