@@ -20,6 +20,7 @@
 Конфиг `appsettings.json` можно обновлять прямо во время работы приложения, он сразу применится.
 
 ## Build
+Нужен [.NET SDK 8](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 ```
 dotnet build
 ```
