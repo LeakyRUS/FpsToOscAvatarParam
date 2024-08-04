@@ -32,12 +32,12 @@ public class Runner
             var updateMills = settings.UpdateMills;
             countUpdates += 1f / updateMills;
 
-            var fps = _fpsProvider.GetFps(settings.TargetProcess);
-            var maxFps = settings.MaxFps;
-            var resultFps = fps < maxFps ? 1 - (fps / maxFps) : 0;
-
             if (countUpdates >= 1f)
             {
+                var fps = _fpsProvider.GetFps(settings.TargetProcess);
+                var maxFps = settings.MaxFps;
+                var resultFps = fps < maxFps ? 1 - (fps / maxFps) : 0;
+
                 countUpdates = 0f;
                 prevResult = newResult;
                 newResult = resultFps;
