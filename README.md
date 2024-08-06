@@ -29,3 +29,8 @@ dotnet build
 ```
 dotnet run
 ```
+
+## External dependencies
+[dotnet runtime](https://github.com/dotnet/runtime) - MIT
+[CoreOSC](https://github.com/dastevens/CoreOSC) - MIT
+[perfview](https://github.com/Microsoft/perfview) - MIT
